@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.mainasuk.soundsystem")
 public class CDPlayerConfig {
 }
