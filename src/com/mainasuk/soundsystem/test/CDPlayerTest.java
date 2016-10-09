@@ -1,7 +1,9 @@
-package com.mainasuk.soundsystem;
+package com.mainasuk.soundsystem.test;
 
 import static org.junit.Assert.*;
 
+import com.mainasuk.soundsystem.config.CDPlayerConfig;
+import com.mainasuk.soundsystem.CompactDisc;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
