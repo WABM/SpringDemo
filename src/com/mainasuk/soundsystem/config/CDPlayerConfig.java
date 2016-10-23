@@ -1,6 +1,6 @@
 package com.mainasuk.soundsystem.config;
 
-import com.mainasuk.soundsystem.SgtPeppers;
+import com.mainasuk.soundsystem.CDPlayer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,6 +9,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan(basePackageClasses = { SgtPeppers.class })
+@ComponentScan(basePackageClasses = { CDPlayer.class })
 public class CDPlayerConfig {
 }
