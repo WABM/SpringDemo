@@ -6,7 +6,6 @@ import com.mainasuk.soundsystem.BlankDisc;
 import com.mainasuk.soundsystem.CDPlayer;
 import com.mainasuk.soundsystem.CompactDisc;
 import com.mainasuk.soundsystem.config.CDPlayerConfig;
-import com.mainasuk.soundsystem.config.ExpressiveCDConfig;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
@@ -20,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {CDPlayerConfig.class, ExpressiveCDConfig.class})
+@ContextConfiguration(classes = {CDPlayerConfig.class})
 public class CDPlayerTest {
 
     @Rule
