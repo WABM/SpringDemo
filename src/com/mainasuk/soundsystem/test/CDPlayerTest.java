@@ -60,5 +60,7 @@ public class CDPlayerTest {
         assertEquals(
                 "Playing Rattle and Hum by U2\n",
                 log.getLog());
+
+        System.out.println("Product date: " + blankDisc.getProductDateMillis());
     }
 }

@@ -13,12 +13,15 @@ public class BlankDisc implements CompactDisc {
 
     private String title;
     private String artist;
+    private long productDateMillis;
 
     public BlankDisc(
             @Value("${disc.title}") String title,
-            @Value("${disc.artist}") String artist) {
+            @Value("${disc.artist}") String artist,
+            @Value("#{T(System).currentTimeMillis()}") long timeMillis ) {
         this.title = title;
         this.artist = artist;
+        this.productDateMillis = timeMillis;
     }
 
     public void setTitle(String title) {
@@ -27,6 +30,10 @@ public class BlankDisc implements CompactDisc {
 
     public void setArtist(String artist) {
         this.artist = artist;
+    }
+
+    public long getProductDateMillis() {
+        return productDateMillis;
     }
 
     @Override
